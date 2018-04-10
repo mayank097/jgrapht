@@ -21,12 +21,23 @@ import java.util.*;
 
 import org.jgrapht.*;
 
+/**
+ * Generates a <a href="http://mathworld.wolfram.com/StackedBookGraph.html">star graph</a> of any size.
+ * This  graph is a star graph of order (m+1) stacked on (n-1) other star graph of same order .
+ *
+ * @author Joris Kinable
+ *
+ * @param <V> the graph vertex type
+ * @param <E> the graph edge type
+ */
 public class StackedBookGraphGenerator<V, E>
     implements GraphGenerator<V, E, V>
 {
  
     private int m;
     private int n;
+	
+	
 	/**
      * Creates a new StackedBookGraphGenerator object.
      *
