@@ -24,7 +24,7 @@ import org.jgrapht.*;
 public class StackedBookGraphGenerator<V, E>
     implements GraphGenerator<V, E, V>
 {
-    public static final String CENTER_VERTEX[] = "Center Vertex";
+ 
     private int m;
     private int n;
     
