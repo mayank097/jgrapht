@@ -81,8 +81,7 @@ for(j=1;j<=n;j++)
 	{ target.addEdge(map1.get(i), map2.get(j));
 		
           }
-  5.
-
+	
      //  connect center vertices to another center vertices
 
 	for(j=1;j<n;j++)
