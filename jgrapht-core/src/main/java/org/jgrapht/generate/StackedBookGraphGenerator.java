@@ -41,8 +41,8 @@ public  StackedBookGraphGenerator(int m,int n)
     public void generateGraph(
         Graph<V, E> target, VertexFactory<V> vertexFactory, Map<String, V> resultMap)
   {
-     if ((m < 1)||(n,2)) {
-            return;
+     if ((m < 1)||(n,2)) 
+       {    return;
         }
        // Create other vertices
     
