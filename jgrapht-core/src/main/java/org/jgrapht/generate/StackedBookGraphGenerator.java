@@ -44,27 +44,50 @@ public class StackedBookGraphGenerator<V, E>
      if (m < 1)||(n,2) {
             return;
         }
-        for (int i;i<=n;i++)
-         V centerVertex[] = vertexFactory.createVertex();
-          target.addVertex(centerVertex[i]);
-           if (resultMap != null) {
-            resultMap.put(CENTER_VERTEX[], centerVertex);
-        }
-        for(int i;i<=n;i++)
-        {
-        for(int j;j<=m;j++)
-        {
-        V newVertex[j][i] = vertexFactory.createVertex();
-          target.addVertex(newVertex[j][i]);
-          target.addEdge(newVertex[j][i],centerVertex[i]);
+       // Create other vertices
+    
+ Map<Integer, V> map1 = new HashMap<>();
+
+        // Adding all vertices to the map1
+        
+        for (int i = 1; i <= (m * n); i++) {
+            V vertex = vertexFactory.createVertex();
+            target.addVertex(vertex);
+            map1.put(i , vertex);
+            
+ // Create CENTER vertices
+    
+ Map<Integer, V> map2 = new HashMap<>();
+
+        // Adding all vertices to the map2
+        
+        for (int i = 1; i < =( N); i++) {
+            V vertex = vertexFactory.createVertex();
+            target.addVertex(vertex);
+            map2.put(i , vertex);
+            
+   // Connect vertices to another vertices
+
+  for ( i=1,j=m+1;i<=m*n && j<=m*n;i++,j++)
+
+	 target.addEdge(map1.get(i), map1.get(j));
+            
+   // Connect  vertices to center vertices
+for(j=1;j<=n;j++)
+{
+	
+   for(i=1;i<=m;i++)
+
+	{ target.addEdge(map1.get(i), map2.get(j));
+		
           }
+  5.
+
+     //  connect center vertices to another center vertices
+
+	for(j=1;j<n;j++)
+
+   {       target.addEdge(map2.get(j), map2.get(j+1));
+	
           }
-          for (int i;i<=n;i++)
-           {
-        for(int j;j<=m;j++)
-        {
-        target.addEdge(newVertex[j][i],newVertex[j][i+1]);
-         target.addEdge(centerVertex[i],newVertex[j][i+1]);
-         }
-         }
-          
+// End StackedBookGraphGenerator.java
