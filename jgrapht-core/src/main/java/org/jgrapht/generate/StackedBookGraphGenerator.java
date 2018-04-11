@@ -36,13 +36,12 @@ public class StackedBookGraphGenerator<V, E>
  
     private int m;
     private int n;
-
-    /**
-     * Creates a new StackedBookGraphGenerator object.
-     *
-     * @param m number of vertices in a star graph excluding centeral vertex
-     * @param n number of star graphs to be stacked
-     */
+/**
+ * Creates a new StackedBookGraphGenerator object.
+ *
+ * @param m number of vertices in a star graph excluding centeral vertex
+ * @param n number of star graphs to be stacked
+ */
     
 public  StackedBookGraphGenerator(int m,int n)
     {
