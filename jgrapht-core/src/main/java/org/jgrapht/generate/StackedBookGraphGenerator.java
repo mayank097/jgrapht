@@ -36,8 +36,7 @@ public class StackedBookGraphGenerator<V, E>
  
     private int m;
     private int n;
-	
-	
+
     /**
      * Creates a new StackedBookGraphGenerator object.
      *
