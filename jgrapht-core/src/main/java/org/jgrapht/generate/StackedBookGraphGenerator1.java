@@ -65,10 +65,10 @@ import org.jgrapht.*;
         
         for (int i = 1; i <= (m * n); i++)
 {
-            V vertex = vertexFactory.createVertex();
-            target.addVertex(vertex);
-            map1.put(i , vertex);
-}
+        V vertex = vertexFactory.createVertex();
+        target.addVertex(vertex);
+        map1.put(i , vertex);
+ }
  // Create CENTER vertices
     
  Map<Integer, V> map2 = new HashMap<>();
