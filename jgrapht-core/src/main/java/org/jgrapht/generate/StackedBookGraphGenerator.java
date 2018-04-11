@@ -43,7 +43,6 @@ public class StackedBookGraphGenerator<V, E>
      *
      * @param m number of vertices in a star graph excluding centeral vertex
      * @param n number of star graphs to be stacked
-     * @return StackedBookGraph
      */
     
 public  StackedBookGraphGenerator(int m,int n)
