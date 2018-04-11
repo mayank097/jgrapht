@@ -30,7 +30,7 @@ import org.jgrapht.*;
  * @param <V> the graph vertex type
  * @param <E> the graph edge type
  */
- public class StackedBookGraphGenerator<V, E>
+ public class StackedBookGraphGenerator1<V, E>
     implements GraphGenerator<V, E, V>
 {
     private int m;
@@ -41,7 +41,7 @@ import org.jgrapht.*;
  * @param m number of vertices in a star graph excluding centeral vertex
  * @param n number of star graphs to be stacked
  */
- public  StackedBookGraphGenerator(int m,int n)
+ public  StackedBookGraphGenerator1(int m,int n)
     {
           this.m=m;
           this.n=n;
