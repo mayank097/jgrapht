@@ -33,8 +33,9 @@ import org.jgrapht.*;
 public class StackedBookGraphGenerator<V, E>
     implements GraphGenerator<V, E, V>
 {
-    private int m;
-    private int n;
+       private int m;
+       private int n;
+	
 /**
  * Creates a new StackedBookGraphGenerator object.
  *
@@ -65,9 +66,9 @@ public  StackedBookGraphGenerator(int m,int n)
         // Adding all vertices to the map1
         
         for (int i = 1; i <= (m * n); i++) {
-            V vertex = vertexFactory.createVertex();
-            target.addVertex(vertex);
-            map1.put(i , vertex);
+        V vertex = vertexFactory.createVertex();
+        target.addVertex(vertex);
+        map1.put(i , vertex);
 	}
 	    
  // Create CENTER vertices
