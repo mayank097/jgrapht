@@ -77,12 +77,12 @@ import org.jgrapht.*;
         
         for (int i = 1; i <=(n); i++)
 {
-            V vertex = vertexFactory.createVertex();
-            target.addVertex(vertex);
-            map2.put(i , vertex);
+         V vertex = vertexFactory.createVertex();
+         target.addVertex(vertex);
+         map2.put(i , vertex);
 }
-	    
-   // Connect vertices to another vertices
+    
+ // Connect vertices to another vertices
 
   for (int i=1,j=m+1;i<=m*n && j<=m*n;i++,j++){
 
