@@ -63,23 +63,24 @@ import org.jgrapht.*;
 
         // Adding all vertices to the map1
         
-        for (int i = 1; i <= (m * n); i++) {
+        for (int i = 1; i <= (m * n); i++)
+{
             V vertex = vertexFactory.createVertex();
             target.addVertex(vertex);
             map1.put(i , vertex);
-	}
-	    
+}
  // Create CENTER vertices
     
  Map<Integer, V> map2 = new HashMap<>();
 
         // Adding all vertices to the map2
         
-        for (int i = 1; i <=(n); i++) {
+        for (int i = 1; i <=(n); i++)
+{
             V vertex = vertexFactory.createVertex();
             target.addVertex(vertex);
             map2.put(i , vertex);
-	}
+}
 	    
    // Connect vertices to another vertices
 
