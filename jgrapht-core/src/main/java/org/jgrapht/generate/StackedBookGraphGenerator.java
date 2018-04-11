@@ -38,7 +38,7 @@ public class StackedBookGraphGenerator<V, E>
     private int n;
 	
 	
-	/**
+    /**
      * Creates a new StackedBookGraphGenerator object.
      *
      * @param m number of vertices in a star graph excluding centeral vertex
