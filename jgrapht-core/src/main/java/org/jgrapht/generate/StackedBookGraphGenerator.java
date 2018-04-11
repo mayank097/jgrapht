@@ -33,7 +33,6 @@ import org.jgrapht.*;
 public class StackedBookGraphGenerator<V, E>
     implements GraphGenerator<V, E, V>
 {
- 
     private int m;
     private int n;
   
